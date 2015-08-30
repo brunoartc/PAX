@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Strings">ponto</string>
+    <string name="st">traço</string>
+    <string name="traco">traco</string>
+    <string name="ce">CONVERTER</string>
+    <string name="teee">coverter</string>
+    <string name="title_activity_alfabeto">Alfabeto</string>
+    <string name="vf">volta</string>
+    <string name="pairing_message">Por favor, tente conectar-se de novo depois de parear o dispositivo.</string>
+    <string name="bt_needs_to_be_enabled">Você precisa habilitar o Bluetooth para poder prosseguir :(</string>
+    <string name="bt_initialization_failure">Bluetooth não suportado :(</string>
+    <string name="devices">Dispositivos Bluetooth</string>
+    <string name="connecting_please_wait">Conectando-se ao seu dispositivo Bluetooth. Por favor, aguarde&#8230;</string>
+    <string name="scanning">Procurando dispositivos Bluetooth&#8230;</string>
+    <string name="none_paired">Nenhum dispositivo Bluetooth pareado!</string>
+    <string name="none_found">Nenhum dispositivo Bluetooth encontrado!</string>
+    <string name="null_device_name">[Dispositivo BT]</string>
+    <string name="refresh_list">Atualizar lista</string>
+    <string name="cancel">Cancelar</string>
+</resources>

@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:visibility="visible"
+    android:backgroundTint="#ff000000">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Strings"
+        android:id="@+id/button1"
+        android:onClick="ponto"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/convert"
+        android:layout_toEndOf="@+id/convert" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/traco"
+        android:id="@+id/button2"
+        android:onClick="traco"
+        android:layout_alignTop="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teee"
+        android:id="@+id/convert"
+        android:onClick="morse"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto"
+        android:layout_alignTop="@+id/convert"
+        android:layout_toRightOf="@+id/convert"
+        android:layout_alignBottom="@+id/convert"
+        android:phoneNumber="false"
+        android:text="abcdefg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/Vt"
+        android:text="100"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:ems="10"
+        android:id="@+id/Vp"
+        android:layout_alignBottom="@+id/Vt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Velocidade ."
+        android:id="@+id/textView"
+        android:layout_below="@+id/Vp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Velocidade -"
+        android:id="@+id/textView2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_below="@+id/Vt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        android:ems="10"
+        android:id="@+id/Il"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intervalo entre letras"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/Il"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignRight="@+id/Il"
+        android:layout_alignEnd="@+id/Il" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="300"
+        android:ems="10"
+        android:id="@+id/Ip"
+        android:layout_alignBottom="@+id/Il"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignTop="@+id/Il" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intervalo entre palavras"
+        android:id="@+id/textView4"
+        android:layout_above="@+id/Ip"
+        android:layout_alignRight="@+id/Ip"
+        android:layout_alignEnd="@+id/Ip"
+        android:layout_alignLeft="@+id/Ip"
+        android:layout_alignStart="@+id/Ip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ID"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/convert"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="UUID do dispositivo"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/ID"
+        android:layout_alignLeft="@+id/ID"
+        android:layout_alignStart="@+id/ID" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar"
+        android:id="@+id/Disconect"
+        android:onClick="Desc"
+        android:layout_alignTop="@+id/ID"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alfabeto(morse)"
+        android:id="@+id/ab"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+</RelativeLayout>
